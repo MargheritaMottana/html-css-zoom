@@ -11,7 +11,15 @@
 /* GENERAL */
 
 .container {
-    padding: 20px;
+    padding: 5px 20px;
+}
+
+.column25 {
+    width: 25%;
+}
+
+.column50 {
+    width: 50%;
 }
 
 /* HEADER */
@@ -19,6 +27,11 @@
 header {
     background-color: #000000;
     color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
 
 header .buttons-header {
@@ -40,3 +53,69 @@ header .icon>* {
 }
 
 /* MAIN */
+
+/* FOOTER */
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #222222;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+}
+
+/* footer left */
+
+.icon-footer {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container {
+    text-align: center;
+}
+
+footer section div {
+    margin-right: 20px;
+}
+
+footer .icon-container i {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+footer section:first-child div:nth-child(even) {
+    font-size: 0.5rem;
+}
+
+footer .icon-container p {
+    font-size: 0.7rem;
+}
+
+/* footer middle */
+
+footer section:nth-child(2) {
+    justify-content: center;
+}
+
+footer section:nth-child(2) div:nth-child(5) {
+    font-size: 0.5rem;
+}
+
+/* footer right */
+
+footer section:last-child {
+    justify-content: end;
+}
+
+footer section:last-child div {
+    color: red;
+    background-color: #4A4A4A;
+}
