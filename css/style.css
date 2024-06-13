@@ -7,3 +7,36 @@
 
     font-family: sans-serif;
 }
+
+/* GENERAL */
+
+.container {
+    padding: 20px;
+}
+
+/* HEADER */
+
+header {
+    background-color: #000000;
+    color: white;
+}
+
+header .buttons-header {
+    display: flex;
+    justify-content: right;
+}
+
+header .icon {
+    display: flex;
+    align-items: center;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    background-color: #4A4A4A;
+}
+
+header .icon>* {
+    padding: 5px;
+}
+
+/* MAIN */
