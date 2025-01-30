@@ -10,6 +10,10 @@
 
 /* GENERAL */
 
+body {
+    background-color: #000000;
+}
+
 .column25 {
     width: 25%;
 }
@@ -21,7 +25,6 @@
 /* HEADER */
 
 header {
-    background-color: #000000;
     color: white;
 
     width: 100%;
@@ -56,15 +59,9 @@ header .icon>* {
 /* MAIN */
 
 main {
-    width: 100%;
+    padding: 0 20px;
     height: calc(100vh - 105px);
     overflow: auto;
-    background-color: black;
-}
-
-main .window {
-
-    /* background-color: red; creato solo per debug*/
 }
 
 main .row {
@@ -74,29 +71,33 @@ main .row {
 }
 
 .pic-container {
-    /* height: 100px; */
-    width: calc(100% / 7);
-    /* width: 200px; */
+    height: 100px;
+    width: 200px;
     margin: 5px;
+
     position: relative;
 }
 
 .pic-container img {
     height: 100%;
     width: 100%;
+
     display: block;
     object-fit: cover;
+
     border-radius: 3px;
 }
 
 .mic-name {
     font-size: small;
     color: white;
+
     background-color: rgba(41, 41, 41, 0.5);
+
     padding: 5px;
     border-radius: 3px;
+
     position: absolute;
-    z-index: 1;
     bottom: 0;
     left: 0;
 }
